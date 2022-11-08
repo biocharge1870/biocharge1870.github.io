@@ -38,46 +38,51 @@
 </head>
 
 <body class="pricing sidebar-collapse">
-
   <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="200">
-              <div class="container">
-                <div class="navbar-translate">
-                  <a data-aos="fade-in" data-aos-duration="1900" class="navbar-brand" href="" rel="tooltip" data-placement="bottom">
-                    Biocharge
-                  </a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar top-bar"></span>
-                    <span class="navbar-toggler-bar middle-bar"></span>
-                    <span class="navbar-toggler-bar bottom-bar"></span>
-                  </button>
-                </div>
-                <div class="collapse navbar-collapse" data-nav-image="./assets/img//blurred-image-1.jpg" data-color="orange">
-
-                  <ul data-aos="fade-in" data-aos-duration="1900" class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                      <a href="./about.html" class="nav-link">
-                        <i class="now-ui-icons business_bulb-63"></i>
-                        <p>Our Team</p>
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="./solution.html" class="nav-link">
-                        <i class="now-ui-icons design_app"></i>
-                        <p>Solution</p>
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="./contact.html" class="nav-link">
-                        <i class="now-ui-icons text_align-left"></i>
-                        <p>Contact Us</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-            <!-- End Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="200">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="../index.html">
+          Biocharge
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" data-nav-image="../assets/img//blurred-image-1.jpg" data-color="orange">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a href="./about.html" class="nav-link">
+              <i class="now-ui-icons business_bulb-63"></i>
+              <p>Our Team</p>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+              <i class="now-ui-icons design_app"></i>
+              <p>Solution</p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item" href="#">
+                <i class="now-ui-icons design_bullet-list-67"></i> Learn
+              </a>
+              <a class="dropdown-item" href="#prod2">
+                <i class="now-ui-icons shopping_shop"></i></i> Connect
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-round btn-primary" href="http://capella.energy/webapp/#/login" target="_blank">
+              <p>Sign In</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
 
   <div class="wrapper">
     <div class="page-header page-header-small">
@@ -86,26 +91,30 @@
       <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h1 class="title">The energy of tomorrow is here</h1>
+            <h1 class="title">Baseline technical analysis</h1>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="main">
 
       <div class="features-5">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <h2 class="title">Knowledge is Power</h2>
+              <h2 class="title">From piezo properties to power</h2>
               <div class="info info-horizontal">
                 <div class="icon icon-primary icon-circle">
                   <i class="now-ui-icons location_world"></i>
                 </div>
                 <div class="description">
-                  <h4 class="info-title">Header</h4>
-                  <p>Lorem Ipsum</p>
+                  <h4 class="info-title">Finding the right material</h4>
+                  <p>Before the team could begin defining the power output we needed to find a suitable material to build around. We had to maximize the energy potential with
+                  the budget at our disposal. To do this, we needed to maximize the electromechanical coupling factor, k, of our choosen material. This property defines the efficiency of
+                the material by relating the internal electrical energy to the exhibited mechanical energy under a constant tensor field and electrical field respectively. To maximize this term, we needed a
+              material with a large piezoelectric charge constant, d. The piezoelectric constant is a readily available material property of piezoelectric materials, defining the charge generated per newton of force applied. This term changes with the orientation of the poling in a particular piece
+              so to maximize it and by effect the electromechanical coupling, a longitudinal mode based material was chosen, M4010P1.</p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -113,8 +122,11 @@
                   <i class="now-ui-icons sport_user-run"></i>
                 </div>
                 <div class="description">
-                  <h4 class="info-title">Header</h4>
-                  <p>Lorem Ipsum</p>
+                  <h4 class="info-title">Defining power output per step</h4>
+                  <p>Taking the piezoelectric material properties, charge and voltage constants d and g, with the force of the average persons heel strike the team was able to derive a power output
+                  relative to the compressive stresses of walking over a 1 Hz frequency gait. It was also important to consider the angle of attack for the strikes as this would influence the extent of the strain experienced
+                by the material. The resulting formula provided us with a minimum theoretical power output per piece, per step, and we were able to extrapolate this value out over the optimal placement of 27 Macro Fiber pieces layered along the arched sole of the boot design.
+               </p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -122,14 +134,14 @@
                   <i class="now-ui-icons ui-2_time-alarm"></i>
                 </div>
                 <div class="description">
-                  <h4 class="info-title">Header</h4>
-                  <p>Lorem Ipsum</p>
+                  <h4 class="info-title">Fast Prototyping</h4>
+                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-7">
               <div class="tablet-container">
-                <img src="../assets/img/StevensLogo.png" />
+                <img src="../assets/img/materialChoiceFormulas.png" />
               </div>
             </div>
           </div>
@@ -138,8 +150,8 @@
 
       <div id="prod2" class="features-7 section-image" style="background-image: url('../assets/img/bg11.jpg')">
         <div class="col-md-8 mr-auto ml-auto text-center">
-          <h2 class="title">Header</h2>
-          <h4 class="description">Lorem ipsum</h4>
+          <h2 class="title">Working is a pleasure</h2>
+          <h4 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h4>
         </div>
         <div class="container-fluid">
           <div class="row">
@@ -150,8 +162,8 @@
                     <i class="now-ui-icons design-2_html5"></i>
                   </div>
                   <div class="description">
-                    <h5 class="info-title">Header</h5>
-                    <p class="description">Lorem ipsum</p>
+                    <h5 class="info-title">For Developers</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                   </div>
                 </div>
                 <div class="info info-horizontal">
@@ -159,8 +171,8 @@
                     <i class="now-ui-icons design_palette"></i>
                   </div>
                   <div class="description">
-                    <h5 class="info-title">Header</h5>
-                    <p class="description">Lorem ipsum</p>
+                    <h5 class="info-title">For Designers</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                   </div>
                 </div>
                 <div class="info info-horizontal">
@@ -168,22 +180,22 @@
                     <i class="now-ui-icons design-2_ruler-pencil"></i>
                   </div>
                   <div class="description">
-                    <h5 class="info-title">Header</h5>
-                    <p class="description">Lorem ipsum</p>
+                    <h5 class="info-title">For Artists</h5>
+                    <p class="description">The moment you use Now UI Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="image-container">
-                <img src="../assets/img/StevensLogo.png" alt="">
+                <img src="../assets/img/ipad1.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="section section-frequently">
+      <div class="section section-frequently">
         <div class="container">
           <div class="text-center">
             <h3 class="title">Frequently Asked Questions</h3>
@@ -237,7 +249,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
     </div>
     <footer class="footer footer-default">
@@ -246,7 +258,7 @@
           <ul>
             <li>
               <a href="../index.html">
-                Biocharge
+                Capella
               </a>
             </li>
             <li>
