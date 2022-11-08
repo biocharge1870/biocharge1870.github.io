@@ -15,10 +15,18 @@ body{margin-top:20px;}
     max-width: 40%;
 }
 
+.break {
+    display: block; 
+}
+
 @media (max-width: 767px) {
     .timeline {
         max-width: 98%;
         padding: 25px;
+    }
+
+    .break {
+        display: none; 
     }
 }
 
