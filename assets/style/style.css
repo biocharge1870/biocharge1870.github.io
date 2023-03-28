@@ -15,16 +15,11 @@
   height: 100%;
 }
 
-/*      transitions  #meetjanevideo {
-  height: 540px;
-  width: 960px;
-}*/
-
 .parent{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5px;
-  align-items: center;
+  justify-items: center;
 }
 
 #meetjanevideo {
