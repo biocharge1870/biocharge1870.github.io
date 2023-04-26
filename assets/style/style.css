@@ -15,6 +15,14 @@
   height: 100%;
 }
 
+.the-top {
+  display: none; 
+} 
+
+.the-bottom {
+  display: none; 
+}
+
 .parent{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -129,7 +137,18 @@
   }
 
   .page-header-image {
+    background: url(../img/subtle-prism.svg) !important;
     background-position: right !important;
+  } 
+
+  .the-top {
+    display: block; 
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  } 
+  
+  .the-bottom {
+    display: block; 
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   }
 }
 
